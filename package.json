@@ -1,5 +1,5 @@
 {
-  "home": "",
+  "home": "https://chalikam.github.io/my-valentine-babe/",
   "name": "my-val",
   "version": "0.1.0",
   "private": true,
@@ -11,7 +11,6 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5.2.2",
     "vite": "^5.1.0",
     "web-vitals": "^2.1.4"
   },
