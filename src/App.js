@@ -1,5 +1,8 @@
 import './App.css';
 import {useState} from "react";
+import 'react-bootstrap'
+import {Button} from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
@@ -49,20 +52,17 @@ function App() {
               />
               <h1 className="my-4 text-4xl">Will you be my Valentine Baba?</h1>
               <div className="flex items-center">
-                <button
-                    className={`mr-4 rounded bg-green-500 px-4 py-2 font-bold text-white hover:bg-green-700`}
-                    // className="btn btn-success"
+                <Button variant="success"
                     style={{ fontSize: yesButtonSize }}
                     onClick={() => setYesPressed(true)}
                 >
                   Yes
-                </button>
-                <button
+                </Button>
+                <Button variant="danger"
                     onClick={handleNoClick}
-                    className=" rounded bg-red-500 px-4 py-2 font-bold text-white hover:bg-red-700"
                 >
                   {noCount === 0 ? "No" : getNoButtonText()}
-                </button>
+                </Button>
               </div>
             </>
         )}
